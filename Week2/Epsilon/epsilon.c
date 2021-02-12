@@ -88,7 +88,7 @@ void calculateMaxMinInt(int posNeg){
 	// Initialise integer variable
 	int i;
 	// for loop
-	for (i = intMaxMin - 10; intOperation(i+(posNeg*1), i); i = i + posNeg) {}
+	for (i = posNeg; intOperation(i+(posNeg*1), i); i = i + posNeg) {}
 	printMaxMinInt(maxMin, "for loop", i);
 	// while loop
 	i = posNeg;
