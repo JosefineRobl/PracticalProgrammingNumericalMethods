@@ -1,2 +1,11 @@
+### Ignore files without extension ###
+# Ignore all
+*
+# Unignore all with extensions
+!*.*
+# Unignore all dirs
+!*/
+
+### Ignore all files with the below extensions ###
 *.exe
 *.o
