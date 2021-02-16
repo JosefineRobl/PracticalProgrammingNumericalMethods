@@ -1,0 +1,60 @@
+---------- Exercise 1 ----------
+---------- i ----------
+My max int for the INT_MAX is 2147483647.
+My max int for the for loop is 2147483647.
+My max int for the while loop is 2147483647.
+My max int for the do while loop is 2147483647.
+---------- ii ----------
+My min int for the INT_MIN is -2147483648.
+My min int for the for loop is -2147483648.
+My min int for the while loop is -2147483648.
+My min int for the do while loop is -2147483648.
+---------- iii ----------
+---------- Float
+Machine epsilon for floats for FLT_EPSILON is: 1.19209e-07.
+Machine epsilon for floats for for loop is: 1.19209e-07.
+Machine epsilon for floats for while loop is: 1.19209e-07.
+Machine epsilon for floats for do while loop is: 1.19209e-07.
+---------- Double
+Machine epsilon for doubles for DBL_EPSILON is: 2.22045e-16.
+Machine epsilon for doubles for for loop is: 2.22045e-16.
+Machine epsilon for doubles for while loop is: 2.22045e-16.
+Machine epsilon for doubles for do while loop is: 2.22045e-16.
+---------- Long double
+Machine epsilon for long doubles for LDBL_EPSILON is: 1.0842e-19.
+Machine epsilon for long doubles for for loop is: 1.0842e-19.
+Machine epsilon for long doubles for while loop is: 1.0842e-19.
+Machine epsilon for long doubles for do while loop is: 1.0842e-19.
+---------- Exercise 2 ----------
+max is set to INT_MAX/2.
+---------- i ----------
+sumUpFloat(max=1073741823) resulted in 15.4037.
+sumDownFloat(max=1073741823) resulted in 18.8079.
+---------- ii ----------
+The difference between the two sums is ... .
+---------- iii ----------
+Yes/No, the sum converge as a function of 'max'.
+---------- iv ----------
+sumUpDouble(max=1073741823) resulted in 21.3716.
+sumDownDouble(max=1073741823) resulted in 21.3716.
+Explanation ... .
+---------- Exercise 3 ----------
+We test equal(a, b, tau, epsilon):
+Only relative precision should be true: a = 2, b = 1, tau = 1, epsilon = 1, equal(2, 1, 1, 1) = 1.
+Both absolute and relative precision should be true: a = 2, b = 1, tau = 2, epsilon = 1, equal(2, 1, 2, 1) = 1.
+Only absolute precision should be true: a = 2, b = 1, tau = 2, epsilon = 0.25, equal(2, 1, 2, 0.25) = 1.
+Neither precision should be true, i.e. (both should be false): a = 2, b = 1, tau = 0.5, epsilon = 0.25, equal(2, 1, 0.5, 0.25) = 0.
+---------- Exercise 4 ----------
+Now we test the function nameDigit with the integers from -1 to 10:
+nameDigit for input digit -1 is: -1 is not a single digit between 0 and 9.
+nameDigit for input digit 0 is: Zero
+nameDigit for input digit 1 is: One
+nameDigit for input digit 2 is: Two
+nameDigit for input digit 3 is: Three
+nameDigit for input digit 4 is: Four
+nameDigit for input digit 5 is: Five
+nameDigit for input digit 6 is: Six
+nameDigit for input digit 7 is: Seven
+nameDigit for input digit 8 is: Eight
+nameDigit for input digit 9 is: Nine
+nameDigit for input digit 10 is: 10 is not a single digit between 0 and 9.

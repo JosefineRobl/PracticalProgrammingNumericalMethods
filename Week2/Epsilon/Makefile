@@ -8,11 +8,14 @@ default: out.txt
 out.txt: epsilon
 	./$< > $@
 
-epsilon.o: epsilon.c
+epsilon.o: epsilon.c precision.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
-epsilon: epsilon.o
-	$(CC) $(LDFLAGS) $< -o $@ $(LDLIBS)
+precision.o: precision.c precision.h
+	$(CC) $(CFLAGS) -c $< -o $@
+
+epsilon: epsilon.o precision.o
+	$(CC) $(LDFLAGS) $^ -o $@ $(LDLIBS)
 
 clean:
 	$(RM) *.o out* epsilon
